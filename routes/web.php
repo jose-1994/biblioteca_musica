@@ -16,9 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('album');
-});
+});*/
+
+Route::resource('album','App\Http\Controllers\AlbumCrontroller');
 
 Route::middleware([
     'auth:sanctum',
@@ -33,3 +35,4 @@ Route::middleware([
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
