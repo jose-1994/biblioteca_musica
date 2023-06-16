@@ -32,6 +32,8 @@ Route::middleware([
     })->name('dashboard');
 });
 
+Route::name('print')->get('/imprimir', '\App\Http\Controllers\GeneradorController@imprimir');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -81,8 +81,8 @@ footer {
     <header>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Album</a></li>
+                <li><a href="{{url('/')}}">Inicio</a></li>
+                <li><a href="{{url('/album')}}">Album</a></li>
                 <li><a href="#">Servicios</a></li>
                 <li><a href="#">Contacto</a></li>
            @if (Route::has('login'))

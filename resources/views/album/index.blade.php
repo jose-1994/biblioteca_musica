@@ -1,3 +1,4 @@
+<x-layout>
  @extends('layouts.plantillabase');
 
  @section('contenido')
@@ -25,6 +26,7 @@
                 @csrf
                 @method('DELETE')
                 <button type="submit" class="btn btn-danger">Borrar</button>
+                <a class="btn btn-info" href="{{url('/imprimir')}}">Imprimir PDF</a>
                 </form>
             </td>
         </tr>
@@ -32,3 +34,5 @@
     </tbody>
  </table>
  @endsection
+</x-layout>
+
