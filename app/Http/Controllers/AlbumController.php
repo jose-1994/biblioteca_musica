@@ -91,6 +91,6 @@ class AlbumController extends Controller
     public function imprimirAlbum(string $id){
         $album = Album::find($id);
         $pdf = \PDF::loadView('album.listaalbum', ['albums'=>$album]);
-        return $pdf->download('albums.pdf');
+        return $pdf->download($album->titulo.'.pdf');
    }
 }
