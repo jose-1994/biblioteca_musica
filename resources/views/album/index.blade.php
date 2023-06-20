@@ -32,7 +32,7 @@
                 @csrf
                 @method('DELETE')
                 <button type="submit" class="btn btn-danger">Borrar</button>
-                <a class="btn btn-info" href="{{url('/imprimir')}}">Imprimir PDF</a>
+                <a class="btn btn-info" href="{{url('/imprimirAlbums')}}">Imprimir PDF</a>
                 </form>
             </td>
         </tr>
