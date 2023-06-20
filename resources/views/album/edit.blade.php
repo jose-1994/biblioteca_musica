@@ -1,3 +1,4 @@
+<x-layout>
 @extends('layouts.plantillabase');
 
 @section('contenido')
@@ -23,3 +24,4 @@
     <button type="submit" class="btn btn-primary" tabindex="5">Guardar</button>
 </form>
 @endsection 
+</x-layout>
