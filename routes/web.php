@@ -20,7 +20,7 @@ Route::get('/', function () {
     return view('album');
 });*/
 
-Route::resource('album','App\Http\Controllers\AlbumCrontroller');
+Route::resource('album','App\Http\Controllers\AlbumController');
 
 Route::middleware([
     'auth:sanctum',
@@ -34,7 +34,7 @@ Route::middleware([
 
 Route::name('print')->get('/imprimir', '\App\Http\Controllers\GeneradorController@imprimir');
 
-Route::name('printAlbums')->get('/imprimirAlbums', '\App\Http\Controllers\AlbumCrontroller@imprimirAlbum');
+Route::name('printAlbums')->get('/imprimirAlbums', '\App\Http\Controllers\AlbumController@imprimirAlbum');
 
 Auth::routes();
 

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Album;
 
-class AlbumCrontroller extends Controller
+class AlbumController extends Controller
 {
     /**
      * Display a listing of the resource.
