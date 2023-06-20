@@ -34,7 +34,7 @@ Route::middleware([
 
 Route::name('print')->get('/imprimir', '\App\Http\Controllers\GeneradorController@imprimir');
 
-Route::name('printAlbums')->get('/imprimirAlbums', '\App\Http\Controllers\AlbumController@imprimirAlbum');
+Route::name('printAlbums')->get('/imprimirAlbums/{id}', '\App\Http\Controllers\AlbumController@imprimirAlbum');
 
 Auth::routes();
 

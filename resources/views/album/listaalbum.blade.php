@@ -26,12 +26,12 @@
         <h1>Lista de Albums</h1>
         <hr>
         <div class="contenido">
-            @foreach($albums as $album)
-            <h2>{{$album->id}}
-                {{$album->titulo}}
-                {{$album->añolanzamiento}}</h2>
+            
+            <h2>{{$albums->id}}
+                {{$albums->titulo}}
+                {{$albums->añolanzamiento}}</h2>
             </h2>
-            @endforeach
+            
           
         </div>
     </body>

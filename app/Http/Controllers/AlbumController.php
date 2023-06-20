@@ -83,14 +83,14 @@ class AlbumController extends Controller
         return redirect('/album');
 
     }
-    public function imprimirAlbum(){
+   /* public function imprimirAlbum(){
         $album = Album::all();
         $pdf = \PDF::loadView('album.listaalbum', ['albums'=>$album]);
         return $pdf->download('albums.pdf');
-   }
-   /* public function imprimirAlbum(string $id){
+   }*/
+    public function imprimirAlbum(string $id){
         $album = Album::find($id);
         $pdf = \PDF::loadView('album.listaalbum', ['albums'=>$album]);
         return $pdf->download('albums.pdf');
-   }*/
+   }
 }
