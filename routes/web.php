@@ -19,7 +19,7 @@ Route::get('/', function () {
 /*Route::get('/', function () {
     return view('album');
 });*/
-
+Route::resource('artistas','App\Http\Controllers\ArtistaController');
 Route::resource('album','App\Http\Controllers\AlbumController');
 
 Route::middleware([
