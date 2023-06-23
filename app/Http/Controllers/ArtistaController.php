@@ -22,7 +22,7 @@ class ArtistaController extends Controller
      */
     public function create()
     {
-        //
+        return view('artistas.create');
     }
 
     /**
