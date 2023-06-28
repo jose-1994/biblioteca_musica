@@ -14,7 +14,7 @@
 
 </thead>
 <tbody>
-@foreach($artistas as $artistas)
+@foreach($artistas as $artista)
 <tr>
     <td>{{$artista->Id</td>
         <td>{{$artista->Nombre</td>

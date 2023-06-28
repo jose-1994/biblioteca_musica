@@ -30,7 +30,12 @@ class ArtistaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $artista = new Artista();
+        $artista->nombre= $request->get('nombre');
+        $artista->pais= $request->get('pais');
+        $artista->genero= $request->get('genero');
+        $artista->save();
+        return redirect('/artistas');
     }
 
     /**
