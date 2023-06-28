@@ -23,8 +23,12 @@
                 <td>{{$artista->genero}}</td>
 
                     <td>
+                        <form action="{{route('artistas.destroy',$artista->id)}}", method="POST">
                         <a href="/artistas/{{ $artista->id}}/edit" class="btn btn-info">Editar</a>
-                        <button class="btn btn-danger">Eliminar</button>
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                        </form>
                     </td>
 </tr>
 @endforeach
