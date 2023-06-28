@@ -51,7 +51,8 @@ class ArtistaController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $artista = Artistas::find($id);
+        return view('Artistas\edit')->with('artista',$artista);
     }
 
     /**
@@ -59,7 +60,13 @@ class ArtistaController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        
+        $artista = Artistas::find($id);
+        $artista->nombre = $request->get('nombre');
+        $artista->pais = $request->get('pais');
+        $artista->genero = $request->get('genero');
+        $artista->save();
+        return redirect('/artistas');
     }
 
     /**

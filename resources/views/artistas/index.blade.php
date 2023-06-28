@@ -23,7 +23,7 @@
                 <td>{{$artista->genero}}</td>
 
                     <td>
-                        <a class="btn btn-info">Editar</a>
+                        <a href="/artistas/{{ $artista->id}}/edit" class="btn btn-info">Editar</a>
                         <button class="btn btn-danger">Eliminar</button>
                     </td>
 </tr>
