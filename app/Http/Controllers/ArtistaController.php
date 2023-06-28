@@ -12,7 +12,7 @@ class ArtistaController extends Controller
      */
     public function index()
     {
-        $artista=  Artistas::all();
+        $artista = Artistas::all();
         return view('artistas.index')->with('artistas',$artista);
        
     }
@@ -30,10 +30,10 @@ class ArtistaController extends Controller
      */
     public function store(Request $request)
     {
-        $artista = new Artista();
-        $artista->nombre= $request->get('nombre');
-        $artista->pais= $request->get('pais');
-        $artista->genero= $request->get('genero');
+        $artista = new Artistas();
+        $artista->nombre = $request->get('nombre');
+        $artista->pais = $request->get('pais');
+        $artista->genero = $request->get('genero');
         $artista->save();
         return redirect('/artistas');
     }

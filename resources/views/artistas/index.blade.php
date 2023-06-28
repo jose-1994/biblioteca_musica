@@ -9,6 +9,7 @@
     <th scope="col">Nombre</th>
     <th scope="col">Pais</th>
     <th scope="col">Genero</th>
+    <th scope="col">Acciónes</th>
      
 </tr>
 
@@ -16,10 +17,11 @@
 <tbody>
 @foreach($artistas as $artista)
 <tr>
-    <td>{{$artista->Id</td>
-        <td>{{$artista->Nombre</td>
-            <td>{{$artista->Pais</td>
-                <td>{{$artista->Genero</td>
+    <td>{{$artista->id}}</td>
+        <td>{{$artista->nombre}}</td>
+            <td>{{$artista->pais}}</td>
+                <td>{{$artista->genero}}</td>
+
                     <td>
                         <a class="btn btn-info">Editar</a>
                         <button class="btn btn-danger">Eliminar</button>
