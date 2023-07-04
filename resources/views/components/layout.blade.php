@@ -99,7 +99,7 @@ footer {
   </button>
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="{{url('/album')}}">Mostrar Albums</a></li>
-    <li><a class="dropdown-item" href="{{url('/album/create')}}">Crear Albums</a></li>
+    <li><a class="dropdown-item" href="{{url('/viewalbums')}}">Crear Albums</a></li>
   </ul>
   <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
     

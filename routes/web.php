@@ -19,8 +19,6 @@ Route::get('/', function () {
 /*Route::get('/', function () {
     return view('album');
 });*/
-Route::resource('artistas','App\Http\Controllers\ArtistaController');
-Route::resource('album','App\Http\Controllers\AlbumController');
 
 Route::middleware([
     'auth:sanctum',
@@ -30,7 +28,12 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+Route::resource('album','App\Http\Controllers\AlbumController');
+Route::resource('artistas','App\Http\Controllers\ArtistaController');
+
 });
+
+Route::name('viewalbums')->get('/viewalbums', '\App\Http\Controllers\AlbumController@viewalbums');
 
 Route::name('print')->get('/imprimir', '\App\Http\Controllers\GeneradorController@imprimir');
 

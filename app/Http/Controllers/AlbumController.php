@@ -45,7 +45,8 @@ class AlbumController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $albums=Album::all();
+        return view('album.viewalbums')->with('albums',$albums);
     }
 
     /**
@@ -92,5 +93,10 @@ class AlbumController extends Controller
         $album = Album::find($id);
         $pdf = \PDF::loadView('album.listaalbum', ['albums'=>$album]);
         return $pdf->download($album->titulo.'.pdf');
+   }
+   public function viewalbums()
+   {
+       $albums=Album::all();
+       return view('album.viewalbums')->with('albums',$albums);
    }
 }
