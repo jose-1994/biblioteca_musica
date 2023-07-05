@@ -16,13 +16,13 @@
   
   <div class="content-all">
     <div class="content-carousel">
-      <figure><a href=""><img src="/img/nirvana.png"></a></figure>
-      <figure><img src="/img/kizz.png"></figure>
-      <figure><img src="/img/soda.png"></figure>
-      <figure><img src="/img/soript.png"></figure>
-      <figure><img src="img/emi.jpg"></figure>
-      <figure><img src="img/stones.jpg"></figure>
-      <img src="img/logo.png">
+      <figure><a href=""><img src="/img/nirvana.png" ></a></figure>
+      <figure><img src="/img/kizz.png" ></figure>
+      <figure><img src="/img/soda.png" ></figure>
+      <figure><img src="/img/soript.png" ></figure>
+      <figure><img src="img/emi.jpg" ></figure>
+      <figure><img src="img/stones.jpg" ></figure>
+      <img src="img/logo 145.png">
       
 
   {{--<h2><p class="text-center">Recomendaciones de la Semana</p></h2>

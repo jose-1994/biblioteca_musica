@@ -53,3 +53,7 @@
 		transform: rotateY(360deg);
 	}
 }
+
+.circulo{
+	clip-path: circle();
+}
