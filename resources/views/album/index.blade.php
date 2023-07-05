@@ -9,7 +9,7 @@
  @section('contenido')
  <h1 class="bg-primary text-white text-center">Album</h1>
  
- <a href="album/create" class="btn btn-primary mb-3">Agregar Album</a>
+ <a href="album/create" class="btn btn-success mb-3">Agregar Album</a>
 
  <table class="table table-dark table-striped mt-4" id="tabla">
     <thead>
