@@ -13,7 +13,7 @@
 <div class="container">
   <div class="row">
 
-
+  
   <div class="content-all">
     <div class="content-carousel">
       <figure><a href=""><img src="/img/nirvana.png"></a></figure>
@@ -22,7 +22,8 @@
       <figure><img src="/img/soript.png"></figure>
       <figure><img src="img/emi.jpg"></figure>
       <figure><img src="img/stones.jpg"></figure>
-
+      <img src="img/logo.png">
+      
 
   {{--<h2><p class="text-center">Recomendaciones de la Semana</p></h2>
     <div class="container col-10">
