@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Presentación</title>
+    <title></title>
     <style>
         body {
     margin: 0;
@@ -83,31 +83,10 @@ footer {
 
     <header>
         <nav>
-            <ul>
-            <div class="dropdown">
-                <li><a href="{{url('/')}}">Inicio</a></li>
- <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
-    Artistas
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="{{url('/artistas')}}">Mostrar Artistas</a></li>
-    <li><a class="dropdown-item" href="{{url('/artistas/create')}}">Crear Artistas</a></li>
-  </ul>
-
-  <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
-    Albums
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="{{url('/album')}}">Mostrar Albums</a></li>
-    <li><a class="dropdown-item" href="{{url('/viewalbums')}}">Crear Albums</a></li>
-  </ul>
-  <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
-    
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="{{url('/artistas')}}">Mostrar Artistas</a></li>
-    <li><a class="dropdown-item" href="{{url('/artistas/create')}}">Crear Artistas</a></li>
-  </ul>
+        <ul>    
+    <li><a href="{{url('/')}}">Inicio</a></li>
+    <li><a href="{{url('/viewartistas')}}">Artistas</a></li>
+    <li><a href="{{url('/viewalbums')}}">Albums</a></li>
 
            @if (Route::has('login'))
             @auth
@@ -120,8 +99,6 @@ footer {
                 @endif
             @endauth
         @endif</ul>
-        </div>
-
         </nav>
     </header>
             {{ $slot }}

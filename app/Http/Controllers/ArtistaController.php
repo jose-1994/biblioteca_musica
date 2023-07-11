@@ -78,4 +78,9 @@ class ArtistaController extends Controller
         $artista->delete();
         return redirect('/artistas');
     }
+    public function viewartistas()
+   {
+       $artistas=Artistas::all();
+       return view('artistas.viewartistas')->with('artistas',$artistas);
+   }
 }

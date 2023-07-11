@@ -1,7 +1,9 @@
-<x-layout>
+<x-app-layout>
+</x-app-layout>
 @extends('layouts.plantillabase');
 
 @section('contenido')
+
 <h2>CREAR REGISTRO DE ALUBM</h2>
 
 <form action="/album" method="POST">
@@ -23,4 +25,4 @@
     <button type="submit" class="btn btn-primary" tabindex="5">Guardar</button>
 </form>
 @endsection 
-</x-layout>
+

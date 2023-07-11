@@ -1,4 +1,5 @@
-<x-layout>
+<x-app-layout>
+</x-app-layout>
  @extends('layouts.plantillabase');
 
  @section('css')
@@ -43,7 +44,7 @@
  </table>
 
  @endsection
-</x-layout>
+
 @section('js')
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>

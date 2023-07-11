@@ -34,6 +34,8 @@ Route::resource('artistas','App\Http\Controllers\ArtistaController');
 });
 
 Route::name('viewalbums')->get('/viewalbums', '\App\Http\Controllers\AlbumController@viewalbums');
+Route::name('viewartistas')->get('/viewartistas', '\App\Http\Controllers\ArtistaController@viewartistas');
+
 
 Route::name('print')->get('/imprimir', '\App\Http\Controllers\GeneradorController@imprimir');
 

@@ -1,4 +1,5 @@
-<x-layout>
+<x-app-layout>
+</x-app-layout>
 @extends('layouts.plantillabase');
 
 @section('contenido')
@@ -23,4 +24,3 @@
 </form>
 
 @endsection
-</x-layout>
